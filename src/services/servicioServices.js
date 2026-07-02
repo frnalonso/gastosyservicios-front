@@ -17,6 +17,12 @@ export const createServicio = async (servicio) => {
     });
 };
 
+export const deleteServicio = async (id) => {
+    const response = await fetch(`${API_BASE_URL}/servicios/${id}`, {
+        method: "DELETE"
+    });
+};
+
 export const getServiciosResumen = async () => {
     const response = await fetch(`${API_BASE_URL}/servicios/resumen`);
     if (!response.ok) throw new Error("Error al obtener resumen de servicios");

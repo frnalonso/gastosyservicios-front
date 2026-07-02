@@ -50,6 +50,18 @@ function NavBar() {
             >
               Agregar Servicio
             </NavLink>
+            <NavLink
+              to="/servicios/delete"
+              className="block px-4 py-2 hover:bg-gray-100 rounded-b-lg"
+            >
+              Eliminar Servicio
+            </NavLink>
+            <NavLink
+              to="/servicios/update"
+              className="block px-4 py-2 hover:bg-gray-100 rounded-b-lg"
+            >
+              Modificar Servicio
+            </NavLink>
 
           </div>
         </div>
